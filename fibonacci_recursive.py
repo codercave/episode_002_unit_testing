@@ -3,3 +3,4 @@ def fibonacci_at_index(index: int):
         return 1
     else:
         return fibonacci_at_index(index - 1) + fibonacci_at_index(index - 2)
+
