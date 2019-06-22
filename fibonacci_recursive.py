@@ -1,6 +1,8 @@
 def fibonacci_at_index(index: int):
-    if index == 0 or index == 1:
-        return 1
-    else:
-        return fibonacci_at_index(index - 1) + fibonacci_at_index(index - 2)
-
+    a = 1
+    b = 1
+    for _ in range(1, index):
+        temp = a
+        a = a + b
+        b = temp
+    return a
